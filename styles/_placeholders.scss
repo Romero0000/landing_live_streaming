@@ -1,0 +1,15 @@
+@use 'variables.scss' as v;
+%hover-db{
+    &:hover{
+        cursor: pointer;
+        color: v.$darkblue-color;
+    }
+}
+%hover-db-icon{
+    display: inline-block;
+    transition: transform .4s ease;
+    &:hover{
+        cursor: pointer;
+        transform: rotate(360deg);
+    }
+}
