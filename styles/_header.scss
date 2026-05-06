@@ -1,7 +1,8 @@
 @use 'variables.scss' as v;
-@use 'sass:color';
+
 @use 'mixins.scss' as m;
 @use 'placeholders.scss';
+@use 'sass:color';
 
 .header{
     width: 100%;
