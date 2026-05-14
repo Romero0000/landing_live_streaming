@@ -51,7 +51,7 @@
     border-radius: 10px;
     background-color: rgb(131, 170, 255);
     @include m.d-flex(space-between, center, nowrap, column, 0, 0);
-    overflow: hidden;
+    
     &__title{
         @include m.font(23px, 400, white);
         @include m.d-flex(center, center, nowrap, column, 0, 0);
@@ -92,5 +92,35 @@
         cursor: pointer;
         background-color: rgb(162, 185, 234);
         box-shadow: 5px 5px 10px rgb(23, 8, 97);
+    }
+}
+
+.review-card{
+
+
+    flex-shrink: 0;
+    width: 500px;
+    height: 275px;
+    background: url('../assets/wave_card_bg\ \(1\).svg') center/contain no-repeat;
+    @include m.d-flex(start, start, nowrap, column, 0, 35px);
+    &__avatar{
+        width: 55px;
+        height: 55px;
+        margin: 20px 0 0 20px;
+    }
+
+    &__quote{
+        @include m.font(20px, 400, white);
+        margin: 0 30px;
+        line-height: 1.4;
+    }
+
+    @media(max-width: v.$media_m){
+        width: 330px;
+        row-gap: 15px;
+        background: url('../assets/wave_card_bg\ \(1\).svg') 50% 0/contain no-repeat;
+         &__quote{
+        @include m.font(13px, 400, white);
+                }
     }
 }
