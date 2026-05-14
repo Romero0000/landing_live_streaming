@@ -1,0 +1,108 @@
+@use 'variables.scss' as v;
+@use 'mixins.scss' as m;
+
+
+%slider-button{
+    width: 67px;
+    height: 67px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(131, 170, 255);
+    rotate: z 45deg;
+}
+
+
+.testi{
+    padding: 100px 0 100px 0;
+    margin: 0 auto;
+    @include m.d-flex(start, center, nowrap, column, 0, 90px);
+    &__title{
+        @include m.font(60px, 500, white);
+        @media(max-width:v.$media_m){
+            @include m.font(35px, 400, white);
+        }
+    }
+
+    .slider{
+        position: relative;
+        height: 500px;
+        &__wrapper{
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+        &__left-btn{
+            cursor: pointer;
+          @extend %slider-button;
+          @include m.pos(absolute, 1, -1, top, left, 100px, -100px);
+          &__icon{
+            rotate: z -45deg;
+          }
+        }
+        &__right-btn{
+            cursor: pointer;
+            @extend %slider-button;
+            @include m.pos(absolute, 1, -1, top, right, 100px, -100px);
+
+          &__icon{
+            rotate: z -45deg;
+            
+          }
+        }
+        &__left-btn:hover,
+        &__right-btn:hover{
+            background-color: rgb(255, 255, 255);
+            box-shadow: 5px 5px 10px rgb(15, 5, 88);
+        }
+
+        &__points {
+            @include m.pos (absolute, 1, -1, bottom, left, 70px, 50%);
+            @include m.d-flex(start, center, nowrap, row, 11px, 0);
+            translate: -50% 0;
+            &-item{
+                width: 13px;
+                height: 13px;
+                border-radius: 50%;
+                background-color: rgba(61, 43, 153, 0.826);
+
+                &:hover{
+                    cursor: pointer;
+                    scale: 1.2;
+                    background-color: white;
+                }
+            }
+        }
+
+       @media (max-width:v.$media_m){
+            height: 300px;
+
+            &__left-btn{
+                top: unset;
+                bottom: 20px;
+                left: 0;
+            }
+            &__right-btn{
+                top: unset;
+                bottom: 20px;
+                right: 0;
+            }
+            &__points{
+                bottom: 50px;
+                column-gap: 9px;
+            }
+       }
+       @media (max-width:v.$media_xs){
+        &__left-btn{
+                left: 15px;
+            }
+            &__right-btn{
+                right: 15px;
+            }
+       }
+    }
+
+}
+
+
+
+

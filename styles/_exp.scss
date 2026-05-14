@@ -3,6 +3,7 @@
 
 .exp{
     padding-top: 180px;
+    padding-bottom: 100px;
     margin: 0 auto;
     text-align: center;
     @include m.d-flex(start, center, nowrap, column, 0, 90px);
