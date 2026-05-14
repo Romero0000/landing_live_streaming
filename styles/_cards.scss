@@ -43,3 +43,54 @@
         }
     }
 }
+
+.img-card{
+    width: 325px;
+    height: 295px;
+    position: relative;
+    border-radius: 10px;
+    background-color: rgb(131, 170, 255);
+    @include m.d-flex(space-between, center, nowrap, column, 0, 0);
+    overflow: hidden;
+    &__title{
+        @include m.font(23px, 400, white);
+        @include m.d-flex(center, center, nowrap, column, 0, 0);
+        flex-grow: 1;
+    }
+    &__bg{
+        width: 100%;
+        height: 220px;
+    }
+    &__btn{
+        @include m.pos(absolute, 1, -1, bottom, left, -20px, -30px);
+        width: 120px;
+        height: 90px;
+        border: none;
+        border-radius: 20px;
+        rotate: z 9deg;
+        transition: rotate .2;
+        
+        &-arrow{
+            width: 60px;
+            height: 46px;
+            rotate: -9deg;
+            translate: 12px -6px;
+            
+        }
+
+        &:hover{
+            cursor: pointer;
+            rotate: z 0deg;
+            scale: 1.3;
+            .img-card__btn-arrow{
+                rotate: 0deg;
+            }
+            
+        }
+    }
+    &:hover{
+        cursor: pointer;
+        background-color: rgb(162, 185, 234);
+        box-shadow: 5px 5px 10px rgb(23, 8, 97);
+    }
+}

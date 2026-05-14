@@ -1,136 +1,252 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project5</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link rel="icon" href="assets/icons8-облако-48.png" type="image/png">
-<link rel="stylesheet" href="dist/index.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/icons8-облако-48.png" type="image/png" />
+    <link rel="stylesheet" href="dist/index.css" />
+  </head>
+  <body>
     <header class="header">
-        <div class="container">
-            <nav class="header__nav nav">
-                <div class="nav__title">
-                    <a href="#" class="nav__title-link">CLOUD <span>FLEX</span></a>
-                </div>
-                <div class="nav__links">
-                    <ul class="nav__links-list list">
-                        <li class="list__item">
-                            <a href="#" class="list__item-link">about</a>
-                        </li>
-                        <li class="list__item">
-                            <a href="#" class="list__item-link">
-                                contact
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="nav__covid-wrapper covid">
-                    <a href="#" class="covid__link">COVID-19 UPDATE</a>
-                </div>
-                <div class="nav__globe-wrapper globe">
-                    <a href="#" class="globe__link">
-                        <img src="assets/icons8-планета-48.png" alt="#" class="globe__link-icon">
-                    </a>
-                </div>
-            </nav>
-        </div>
-        </header>
+      <div class="container">
+        <nav class="header__nav nav">
+          <div class="nav__title">
+            <a href="#" class="nav__title-link">CLOUD <span>FLEX</span></a>
+          </div>
+          <div class="nav__links">
+            <ul class="nav__links-list list">
+              <li class="list__item">
+                <a href="#" class="list__item-link">about</a>
+              </li>
+              <li class="list__item">
+                <a href="#" class="list__item-link"> contact </a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav__covid-wrapper covid">
+            <a href="#" class="covid__link">COVID-19 UPDATE</a>
+          </div>
+          <div class="nav__globe-wrapper globe">
+            <a href="#" class="globe__link">
+              <img
+                src="assets/icons8-планета-48.png"
+                alt="#"
+                class="globe__link-icon"
+              />
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
     <main>
-        <section class="hero-section">
-            <div class="container">
-                <div class="hero">
-                    <div class="hero__content">
-                        <h1 class="hero__title">
-                            When performance matters
-                        </h1>
-                        <button class="hero__action-btn">Start development with us!</button>
-                    </div>
-                    <div class="hero__notify">
-                        <img src="assets/pigeon_alpha.png" alt="pigeon" class="hero__notify-img">
-                        <p class="hero__notify-content">Cookies are used to provide the best site experience by enhancing functionality, enabling personalization, analyzing site traffic, and delivering targeted advertisements. </p>
-                        <button class="hero__notify-btn">ACCEPT</button>
-                    </div>
-                    <div class="hero__scroll">
-                        <span class="hero__scroll-content">Scroll down</span>
-                    </div>
-                </div>
+      <section class="hero-section">
+        <div class="container">
+          <div class="hero">
+            <div class="hero__content">
+              <h1 class="hero__title">When performance matters</h1>
+              <button class="hero__action-btn">
+                Start development with us!
+              </button>
             </div>
-        </section>
-        <section class="work-section">
-            <div class="container">
-                <div class="work">
-                    <h2 class="work__title">How we work</h2>
-                    <div class="work__cards-wrapper">
-                        <figure class="info-card card--analysis">
-                            <img src="assets/icons8-лампочка-100.png" alt="#" class="info-card__icon icon--bulb">
-                            <h3 class="info-card__title">Analysis</h3>
-                            <p class="info-card__desc">
-                                Research centre and advisory specialising in providing analytical tools.
-                            </p>
-                        </figure>
-                        <figure class="info-card card--design">
-                            <img src="assets/icons8-компьютер-100.png" alt="#" class="info-card__icon icon--design">
-                            <h3 class="info-card__title">Design</h3>
-                            <p class="info-card__desc">
-                                A critical architectural phase bridging schematic design and construction documents.
-                            </p>
-                        </figure>
-                        <figure class="info-card card--dev">
-                            <img src="assets/icons8-разработка-100.png" alt="#" class="info-card__icon icon--dev">
-                            <h3 class="info-card__title">Development</h3>
-                            <p class="info-card__desc">
-                                Process of growth, differentiation, or positive change, involving the creation of new.
-                            </p>
-                        </figure>
-                        <figure class="info-card card--maint">
-                            <img src="assets/icons8-ремонт-96.png" alt="#" class="info-card__icon icon--maint">
-                            <h3 class="info-card__title">Maintenance</h3>
-                            <p class="info-card__desc">
-                                Act of preserving, repairing, or keeping equipment, property, or systems in good working condition.
-                            </p>
-                        </figure>
-                        <figure class="info-card card--test">
-                            <img src="assets/icons8-результаты-теста-100.png" alt="#" class="info-card__icon icon--test">
-                            <h3 class="info-card__title">Testing</h3>
-                            <p class="info-card__desc">
-                                Verify that it meets specified requirements, identify defects.
-                            </p>
-                        </figure>
-                        <figure class="info-card card--int">
-                            <img src="assets/icons8-интеграция-100.png" alt="#" class="info-card__icon icon--int">
-                            <h3 class="info-card__title">Integration</h3>
-                            <p class="info-card__desc">
-                                Connecting disparate software applications, hardware systems, and data sources.
-                            </p>
-                        </figure>
-                    </div>
-                </div>
+            <div class="hero__notify">
+              <img
+                src="assets/pigeon_alpha.png"
+                alt="pigeon"
+                class="hero__notify-img"
+              />
+              <p class="hero__notify-content">
+                Cookies are used to provide the best site experience by
+                enhancing functionality, enabling personalization, analyzing
+                site traffic, and delivering targeted advertisements.
+              </p>
+              <button class="hero__notify-btn">ACCEPT</button>
             </div>
-        </section>
-        <hr class="divider">
-        <section class="about-section">
-            <div class="container">
-                <div class="about">
-                    <div class="about__quality">
-                        <h3 class="about__quality-title">High Quality</h3>
-                        <p class="about__quality-desc">A high-quality website combines fast performance, intuitive navigation, and user-centric design to deliver an engaging experience. It features secure, mobile-responsive layouts, relevant content, and clear, accessible information that builds trust and drives action.</p>
-                    </div>
-                    <div class="about__touch">
-                        <h3 class="about__touch-title">Always in touch</h3>
-                        <p class="about__touch-desc">Reliably accessible and reachable at all times, ensuring seamless communication and instant. <br> Just a message or call away; consistently available to connect whenever you need.</p>
-                    </div>
-                    <div class="about__approach">
-                        <h3 class="about__approach-title">Individual Approach</h3>
-                        <p class="about__approach-desc">We believe in a personalized approach, ensuring each client receives a tailored solution to meet their specific needs.</p>
-                    </div>
-                </div>
+            <div class="hero__scroll">
+              <span class="hero__scroll-content">Scroll down</span>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
+      <section class="work-section">
+        <div class="container">
+          <div class="work">
+            <h2 class="work__title">How we work</h2>
+            <div class="work__cards-wrapper">
+              <figure class="info-card card--analysis">
+                <img
+                  src="assets/icons8-лампочка-100.png"
+                  alt="#"
+                  class="info-card__icon icon--bulb"
+                />
+                <h3 class="info-card__title">Analysis</h3>
+                <p class="info-card__desc">
+                  Research centre and advisory specialising in providing
+                  analytical tools.
+                </p>
+              </figure>
+              <figure class="info-card card--design">
+                <img
+                  src="assets/icons8-компьютер-100.png"
+                  alt="#"
+                  class="info-card__icon icon--design"
+                />
+                <h3 class="info-card__title">Design</h3>
+                <p class="info-card__desc">
+                  A critical architectural phase bridging schematic design and
+                  construction documents.
+                </p>
+              </figure>
+              <figure class="info-card card--dev">
+                <img
+                  src="assets/icons8-разработка-100.png"
+                  alt="#"
+                  class="info-card__icon icon--dev"
+                />
+                <h3 class="info-card__title">Development</h3>
+                <p class="info-card__desc">
+                  Process of growth, differentiation, or positive change,
+                  involving the creation of new.
+                </p>
+              </figure>
+              <figure class="info-card card--maint">
+                <img
+                  src="assets/icons8-ремонт-96.png"
+                  alt="#"
+                  class="info-card__icon icon--maint"
+                />
+                <h3 class="info-card__title">Maintenance</h3>
+                <p class="info-card__desc">
+                  Act of preserving, repairing, or keeping equipment, property,
+                  or systems in good working condition.
+                </p>
+              </figure>
+              <figure class="info-card card--test">
+                <img
+                  src="assets/icons8-результаты-теста-100.png"
+                  alt="#"
+                  class="info-card__icon icon--test"
+                />
+                <h3 class="info-card__title">Testing</h3>
+                <p class="info-card__desc">
+                  Verify that it meets specified requirements, identify defects.
+                </p>
+              </figure>
+              <figure class="info-card card--int">
+                <img
+                  src="assets/icons8-интеграция-100.png"
+                  alt="#"
+                  class="info-card__icon icon--int"
+                />
+                <h3 class="info-card__title">Integration</h3>
+                <p class="info-card__desc">
+                  Connecting disparate software applications, hardware systems,
+                  and data sources.
+                </p>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr class="divider" />
+      <section class="about-section">
+        <div class="container">
+          <div class="about">
+            <div class="about__quality">
+              <h3 class="about__quality-title">High Quality</h3>
+              <p class="about__quality-desc">
+                A high-quality website combines fast performance, intuitive
+                navigation, and user-centric design to deliver an engaging
+                experience. It features secure, mobile-responsive layouts,
+                relevant content, and clear, accessible information that builds
+                trust and drives action.
+              </p>
+            </div>
+            <div class="about__touch">
+              <h3 class="about__touch-title">Always in touch</h3>
+              <p class="about__touch-desc">
+                Reliably accessible and reachable at all times, ensuring
+                seamless communication and instant. <br />
+                Just a message or call away; consistently available to connect
+                whenever you need.
+              </p>
+            </div>
+            <div class="about__approach">
+              <h3 class="about__approach-title">Individual Approach</h3>
+              <p class="about__approach-desc">
+                We believe in a personalized approach, ensuring each client
+                receives a tailored solution to meet their specific needs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr>
+      <section class="exp-section">
+        <div class="container">
+          <div class="exp">
+            <h2 class="exp__title">Our experience</h2>
+            <div class="exp__cards">
+              <figure class="img-card">
+                <h3 class="img-card__title">Serverless Live Streaming</h3>
+                <img
+                  src="assets/card_shooting.webp"
+                  alt="card shooting"
+                  class="img-card__bg"
+                />
+                <button class="img-card__btn">
+                  <img
+                    src="assets/icons8-стрелка-96.png"
+                    alt="#"
+                    class="img-card__btn-arrow"
+                  />
+                </button>
+              </figure>
+
+              <figure class="img-card">
+                <h3 class="img-card__title">
+                    <span>Learn about CloudFlex</span>
+                    <span>team cases</span>
+                </h3>
+                <img
+                  src="assets/card_working.webp"
+                  alt="card working"
+                  class="img-card__bg"
+                />
+                <button class="img-card__btn">
+                  <img
+                    src="assets/icons8-стрелка-96.png"
+                    alt="#"
+                    class="img-card__btn-arrow"
+                  />
+                </button>
+              </figure>
+
+              <figure class="img-card">
+                <h3 class="img-card__title">Live streaming from mobile</h3>
+                <img
+                  src="assets/card_streaming.webp"
+                  alt="card streaming"
+                  class="img-card__bg"
+                />
+                <button class="img-card__btn">
+                  <img
+                    src="assets/icons8-стрелка-96.png"
+                    alt="#"
+                    class="img-card__btn-arrow"
+                  />
+                </button>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>
