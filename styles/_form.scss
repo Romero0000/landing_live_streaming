@@ -1,0 +1,83 @@
+@use 'variables.scss' as v;
+@use 'mixins.scss' as m;
+
+.form-section {
+    padding: 180px 15px;
+    position: relative;
+    overflow: hidden;
+
+    &__bg-cloud{
+        width: 700px;
+        height: 240px;
+        background: url('../assets/cloud_alpha.png') center/contain no-repeat;
+    }
+    .cloud--left{
+        @include m.pos(absolute, 1, -1, top, left, 0, -350px);
+    }
+    .cloud--right{
+        @include m.pos(absolute, 1, -1, bottom, right, 0, -350px);
+    }
+    &__wrapper{
+        width: 100%;
+        height: 360px;
+        margin: 0 auto;
+        @include m.d-flex(center, center, nowrap, row, 0, 0);
+    }
+}
+
+
+.form {
+    width: 100%;
+    max-width: 625px;
+    @include m.d-flex(center, center, nowrap, column, 0, 23px);
+
+    &__title{
+        @include m.font(36px, 500, black);
+    }
+
+    &__name,
+    &__email,
+    &__text{
+        width: 100%;
+        height: 47px;
+        border-radius: 20px;
+        border: 1px solid gray;
+        padding: 0 1em;
+        z-index: 2;
+        @include m.font(25px, 400, rgb(0, 0, 0));
+
+        &::placeholder {
+            @include m.font(25px, 100, gray);
+        }
+    }
+
+    &__submit-btn{
+        width: 100%;
+        height: 50px;
+        border-radius: 20px;
+        border: none;
+        @include m.font(25px, 500, white);
+        background-color: black;
+        cursor: pointer;
+        z-index: 100;
+
+        &:hover{
+            opacity: .8;
+        }
+        }
+        @media (max-width: v.$media_m){
+            &__title{
+            @include m.font(30px, 400, black);
+            }
+
+            &__name,
+            &__email,
+            &__text{
+                font-size: 18px;
+                &::placeholder{
+                    font-size: 18px;
+                }
+            }
+        }
+}
+
