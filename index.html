@@ -45,6 +45,41 @@
         </nav>
       </div>
     </header>
+
+    <div class="mobile">
+        <label for="checkboxID" class="mobile__burger">
+        <img src="assets/icons8-меню-48.png" alt="#" class="mobile__burger-icon">
+        </label>
+
+        <input id="checkboxID" type="checkbox" class="mobile__toogler">
+
+        <nav class="mobile__menu nav">
+            <ul class="nav__list">
+                <li class="nav__list-item">
+                    <a href="#work" class="nav__list-item__link">How we work</a>
+                </li>
+                <li class="nav__list-item">
+                    <a href="#about" class="nav__list-item__link">About us</a>
+                </li>
+                <li class="nav__list-item">
+                    <a href="#exp" class="nav__list-item__link">Our experience</a>
+                </li>
+                <li class="nav__list-item">
+                    <a href="#testi" class="nav__list-item__link">Testimonials</a>
+                </li>
+                <li class="nav__list-item">
+                    <a href="#form" class="nav__list-item__link">Ready to start?</a>
+                </li>
+                <li class="nav__list-item">
+                    <a href="#contacts" class="nav__list-item__link">Contacts</a>
+                </li>
+
+            </ul>
+        </nav>
+            
+
+    </div>
+
     <main>
       <section class="hero-section">
         <div class="container">
@@ -74,7 +109,7 @@
           </div>
         </div>
       </section>
-      <section class="work-section">
+      <section class="work-section" id="work">
         <div class="container">
           <div class="work">
             <h2 class="work__title">How we work</h2>
@@ -155,7 +190,7 @@
         </div>
       </section>
       <hr class="divider" />
-      <section class="about-section">
+      <section class="about-section" id="about">
         <div class="container">
           <div class="about">
             <div class="about__quality">
@@ -188,7 +223,7 @@
         </div>
       </section>
       <hr />
-      <section class="exp-section">
+      <section class="exp-section" id="exp">
         <div class="container">
           <div class="exp">
             <h2 class="exp__title">Our experience</h2>
@@ -248,7 +283,7 @@
         </div>
       </section>
       <hr />
-      <section class="testi-section">
+      <section class="testi-section" id="testi">
         <div class="container">
           <div class="testi">
             <h2 class="testi__title">Testimonials</h2>
@@ -294,7 +329,7 @@
           </div>
         </div>
       </section>
-      <section class="form-section">
+      <section class="form-section" id="form">
         <div class="container">
           <div class="form-section__wrapper">
             <form action="mailto:streaming_comp@mail.ru" class="form">
@@ -331,7 +366,7 @@
         <div class="form-section__bg-cloud cloud--right"></div>
       </section>
     </main>
-    <footer class="footer-section">
+    <footer class="footer-section" id="contacts">
       <div class="container">
         <div class="footer">
           <div class="footer__terms">
