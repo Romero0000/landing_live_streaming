@@ -1,0 +1,46 @@
+@use 'variables.scss' as v;
+@use 'placeholders.scss';
+@use 'mixins.scss' as m;
+
+
+
+.footer-section{
+    background-color: rgb(131, 170, 255);
+    box-shadow: 0 -5px 10px 0 rgba(0, 0, 0, 0.333) ;
+
+    .footer{
+        width: 100%;
+        height: 135px;
+        margin: 0 auto;
+        padding: 0 15px;
+        @include m.d-flex(space-between, center, nowrap, row, 0, 0);
+    
+    &__terms{
+        @include m.d-flex(start, start, nowrap, column, 0, 15px);
+        
+        &-links{
+            @include m.d-flex(start, center, nowrap, row, 40px, 0);
+            @include m.font(20px, 400, white);
+            
+        }
+        &-link{
+            @extend %hover-db;
+        }
+        &-rights{
+            @include m.font(16px, 400, white);
+        }
+
+    }
+    &__contacts{
+        @include m.d-flex(space-between, center, nowrap, row, 43px, 0);
+        &-item{
+            width: 45px;
+            height: 45px;
+            @extend %hover-db-icon;
+        }
+    }
+    @media (max-width:v.$media_s){
+         @include m.d-flex(center, center, nowrap, column-reverse, 0, 15px);
+    }
+}
+}

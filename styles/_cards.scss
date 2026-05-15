@@ -51,6 +51,7 @@
     border-radius: 10px;
     background-color: rgb(131, 170, 255);
     @include m.d-flex(space-between, center, nowrap, column, 0, 0);
+    overflow: hidden;
     
     &__title{
         @include m.font(23px, 400, white);
