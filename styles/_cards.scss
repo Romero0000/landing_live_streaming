@@ -94,6 +94,9 @@
         background-color: rgb(162, 185, 234);
         box-shadow: 5px 5px 10px rgb(23, 8, 97);
     }
+    @media (max-width:v.$media_xs) {
+        width: 290px;
+    }
 }
 
 .review-card{

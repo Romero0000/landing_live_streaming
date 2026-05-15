@@ -73,7 +73,12 @@
            
 
         }
-
+        @media(max-width: v.$media_xs){
+            .hero__title{
+                font-size: 35px;
+                font-weight: 600;
+            }
+        }
 
     }
 

@@ -63,7 +63,7 @@
                 }
             }
         }
-
+        //grhdfghrgherhergherth
         &__touch{
             position: relative;
             width: 100%;
@@ -126,6 +126,14 @@
                     rotate: 30deg;
                   }
             }
+            @media (max-width:v.$media_xs){
+                    &::before{
+                    top: 110px;
+                    left: -250px;
+                    width: 400px;
+                    rotate: 60deg;
+                  }
+                }
 
             @media (max-width:v.$media_m) {
                 margin-top: -100px;
@@ -136,8 +144,10 @@
                     margin-top: -40px;
                     @include m.d-flex(start, center, nowrap, column, 0, 20px);
                 }
+                
+
             }     
-            
+            //rgherherthertherthrtherth
 
             &__approach{
                 width: 100%;

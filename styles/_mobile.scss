@@ -1,0 +1,54 @@
+@use 'variables.scss' as v;
+@use 'mixins.scss' as m;
+@use 'placeholders.scss';
+@use 'sass:color';
+
+.mobile {
+    display: none;
+    &__burger{
+        @include m.pos(fixed, 9998, -1, top, right, 5px, 13px);
+        cursor: pointer;
+        &-icon{
+            width: 40px;
+            height: 40px;
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+    }
+
+    @media (max-width: v.$media_m){
+        display: block;
+    } 
+    &__toogler{
+        display: none;
+        &:checked + .nav{
+            translate: 0;
+        }
+    }
+    .nav{
+        padding: 100px 70px 0;
+        @include m.pos(fixed, 9997, 0);
+        background-color: rgba(0, 0, 0, 0.653);
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
+        translate: 100% 0;
+        transition: translate .22s;
+
+        &__list{
+            @include m.d-flex(start, start, nowrap, column,0, 15px);
+            &-item__link{
+                @include m.font(35px, 400, white);
+                text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.385);
+                &:hover{
+                    color: rgb(147, 156, 255);
+                    transform: scale(1.2);
+                }
+                
+            }
+        }
+    }
+    
+}
+
+
